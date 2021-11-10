@@ -1,7 +1,12 @@
 import { Box } from "./styled-components";
 
-function Container({ children }) {
-  return <Box>{children}</Box>;
-}
+// switched this to an arrow function
+const Container = ({ children }) => {
+	return (
+		<>
+			<Box>{children}</Box>
+		</>
+	);
+};
 
 export default Container;
